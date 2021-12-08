@@ -1,0 +1,13 @@
+enter the message in binary form:
+1010
+enter the generator pattern:
+1011
+code trasmitted is1010011
+reminder 000
+No error
+enter the position of the bit to be alter:
+2
+reminder 110
+Code received is 1000011
+ERROR DETECTED
+
