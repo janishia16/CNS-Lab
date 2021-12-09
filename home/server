@@ -1,0 +1,31 @@
+import java.net.*;
+import java.io.*;
+
+ public class server
+ {
+ 	public static void main(String args[]) throws IOException, SocketException
+ 	{
+ 		DatagramSocket ds =new DatagramSocket(9000);
+ 		
+ 		byte[] receiveData=new byte[1024];
+ 		while(true)
+ 		{
+ 			DatagramPacket dp=new DatagramPacket(receiveData,receiveData.length);
+ 			ds.receive(dp);
+ 			String Data=new String(dp.getData());
+ 			
+ 			int num=Integer.parseInt(Data.trim());
+ 			int result=num*num;
+ 			
+ 	
+ 			byte[] sendData=(result+" ").getBytes();
+ 			InetAddress myIP=dp.getAddress();
+ 			int Port=dp.getPort();
+ 			
+ 			
+ 			
+ 			DatagramPacket dps=new DatagramPacket(sendData,sendData.length,myIP,Port);
+ 			ds.send(dps);
+ 		}
+ 	}
+ } 
