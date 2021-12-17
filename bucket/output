@@ -1,0 +1,16 @@
+enter the size of bucket:
+5
+Enter the number of packet:
+4
+Enter the packet:
+1
+4
+6
+2
+enter the output rate:
+2
+1 packet transmitted
+2 packet  transmitted
+2  packet  transmitted
+6 causes overflow of the bucket
+2 packet transmitted
