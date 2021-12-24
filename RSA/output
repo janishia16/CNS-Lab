@@ -1,0 +1,17 @@
+mite@mite-cse-lab11-pc25:~/Desktop/4MT19CS060/RES$ javac RSA.java
+Note: RSA.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+mite@mite-cse-lab11-pc25:~/Desktop/4MT19CS060/RES$ javac -Xlint RSA.java
+RSA.java:37: warning: [deprecation] readLine() in DataInputStream has been deprecated
+			String textString=in.readLine();
+			                    ^
+1 warning
+mite@mite-cse-lab11-pc25:~/Desktop/4MT19CS060/RES$ java RSA
+Enter a text messase:
+hello
+Encrypted message:hello
+string in bytes104101108108111
+Decrypted byte:104101108108111
+Decrypted String:hello
+mite@mite-cse-lab11-pc25:~/Desktop/4MT19CS060/RES$ 
+
