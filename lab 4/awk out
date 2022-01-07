@@ -1,0 +1,11 @@
+mite@mite-cse-lab11-pc25:~/Desktop/4MT19CS060/LAB4$ gedit value.awk
+^C
+mite@mite-cse-lab11-pc25:~/Desktop/4MT19CS060/LAB4$ awk -f value.awk lab4.tr
+The number of packet send 27
+The number of packet received 27
+The throughput 100
+The number of packet lost 0
+mite@mite-cse-lab11-pc25:~/Desktop/4MT19CS060/LAB4$ 
+
+
+
